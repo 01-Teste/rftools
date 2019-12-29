@@ -1,0 +1,10 @@
+#!/bin/bash
+
+function ERR0(){
+	echo "O diretório de instalação não é o padrão."
+	echo "Favor corrigir."
+}
+
+function ERR1(){
+	echo "Faltando bibliotecas, Verificar local de instalação $DIR"
+}

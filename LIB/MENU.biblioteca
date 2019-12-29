@@ -1,0 +1,25 @@
+function MENU() {
+	echo -e "
+		\E[1;32m============================================
+			      \E[1;33mFERRAMENTAS DO SO
+		\E[1;32m============================================
+
+		\E[1;37mESCOLHA UMA DAS OPÇÕES ABAIXO\E[m
+		\E[1;32m[\E[1;37m0\E[1;32m]\E[m  \E[1;33mSAIR\033[0m\Em
+		\E[1;32m[\E[1;37m1\E[1;32m]\E[m  \E[1;33mCRIAR DIRETÓRIO\E[m
+		\E[1;32m[\E[1;37m2\E[1;32m]\E[m  \E[1;33mREMOVER DIRETÓRIO VAZIO\E[m
+		\E[1;32m[\E[1;37m3\E[1;32m]\E[m  \E[1;33mREMOVER ARQUIVOS\E[m
+		\E[1;32m[\E[1;37m4\E[1;32m]\E[m  \E[1;33mLISTAR DIRETÓRIO\E[m
+		\E[1;32m[\E[1;37m5\E[1;32m]\E[m  \E[1;33mABRIR EDITOR MCEDIT\E[m
+		\E[1;32m[\E[1;37m6\E[1;32m]\E[m  \E[1;33mABRIR EDITOR NANO\E[m
+		\E[1;32m[\E[1;37m7\E[1;32m]\E[m  \E[1;33mCONSUMO DE MEMÓRIA\E[m
+		\E[1;32m[\E[1;37m8\E[1;32m]\E[m  \E[1;33mMOSTRAR CALENDÁRIO\E[m
+		\E[1;32m[\E[1;37m9\E[1;32m]\E[m  \E[1;33mREMOVER ARQUIVOS EM OUTRO DIRETÓRIO\E[m
+		\E[1;32m[\E[1;37m10\E[1;32m]\E[m \E[1;33mTESTE DE NAVEGAÇÂO\E[m
+		\E[1;32m[\E[1;37m11\E[1;32m]\E[m \E[1;33mTABELA DE ROTEAMENTO\E[m
+		\E[1;32m[\E[1;37m12\E[1;32m]\E[m \E[1;33mGERENCIAMENTO DE PROCEÇOS\E[m
+
+		\E[1;37mDIGITE A OPÇÃO DESEJADA:\E[m \c"
+
+		read OP
+}

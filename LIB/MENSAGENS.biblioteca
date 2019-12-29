@@ -1,0 +1,137 @@
+#!/bin/bash
+
+function MSG0(){
+	echo -e "DIGITE UMA OPÇÃO: \c"
+}
+
+function MSG1(){
+	echo "
+		VOCÊ NÃO ESCOLHEU UMA OPÇÃO VÁLIDA"
+}
+
+function MSG2(){
+	echo -e "DIGITE UM NOME PARA O DIRETÓRIO: \c"
+}
+
+function MSG3(){
+	echo "DIRETÓRIO CRIADO COM SUCESSO!"
+}
+
+function MSG4(){
+	echo "O DIREÓRIO NÃO FOI CRIADO"
+}
+
+function MSG5(){
+	echo -e "
+		=========================================
+		Pressione [enter] para voltar para o menu
+		========================================="
+}
+
+function MSG6(){
+	echo -e "DIGITE O NOME DO DIRETÓRIO QUE DESEJA DELETAR: \c"
+}
+
+function MSG7(){
+	echo "DIRETÓRIO REMOVIDO COM SUCESSO!"
+}
+
+function MSG8(){
+	echo "Verifique se vc digitou o nome do diretorio corretamente"
+	echo "se você tem permissão para alterar o diretorio"
+}
+
+function MSG9(){
+	echo -e "Digite o nome do arquivo que deseja deletar: \c"
+}
+
+function MSG10(){
+	echo "Arquivo removido com sucesso"
+}
+
+function MSG11(){
+	echo "Verifique se você digitou um nome de arquivo existente no diretorio atual"
+	echo "Verifique se você tem permissão para alterar o arquivo"
+}
+
+function MSG12(){
+	echo -e "Digite o diretorio que deseja ver o conteudo: \c"
+}
+
+function MSG13(){
+	echo "Diretorio Invalido"
+}
+
+function MSG14(){
+	echo -e "
+		=========================================
+		    Gerenciamento de memoria
+		========================================="
+}
+
+MSG15(){
+	echo -e "Digite o nome do arquivo que deseja deletar: \c"
+}
+
+function MSG16(){
+	echo -e "digite o caminho completo do diretorio aonde esta o arquivo: \c"
+}
+
+function MSG17(){
+	echo "Você não digitou um diretorio valido"
+}
+
+function MSG18(){
+	echo "O arquivo foi removido com sucesso"
+}
+
+function MSG19(){
+	echo "Verifique se digtou o nome do arquivo corretamente"
+	echo "Verifique se arquivo existe no caminho digitado"
+	echo "Verifique se você tem permissão para alterar o arquivo"
+}
+
+function MSG20(){
+	echo -e "
+		VOCÊ ESCOLHEU UMA OPÇÃO INVÁLIDA"
+}
+
+function MSG21() {
+	echo -e "
+		========================================
+		TESTE DE COMUNICAÇÃO VIA PROTOCOLO ICMP
+		========================================"
+}
+
+function MSG22() {
+	echo -e "
+		========================================
+		\033[1;33mPRESSIONE [ENTER] PARA VOLTAR AO MENU\033[0m
+		========================================"
+}
+
+function MSG23() {
+	echo -e "
+		========================================
+			\033[1;33mFINALIZANDO O PROGRAMA\033[0m
+		========================================"
+}
+
+function MSG24() {
+	echo -e "
+		\E[1;32m========================================
+			\E[1;33mPARA FINALIZAR A
+			VISUALIZAÇÃO DO GERENCIADOR
+			PRESSIONE A TECLA [Q]
+		\E[1;32m========================================
+
+		\E[1;32m========================================
+			\E[1;33mNO PAINEL DE VISUALIZAÇÃO
+			PRESSIONE [ENTER] PARA
+			ATUALIZAR OS DADOS
+		\E[1;32m========================================
+
+		\E[1;32m========================================
+		\E[1;33mPRESSIONE A TECLA [ENTER] PARA CONTINUAR
+		\E[1;32m========================================\E[m"
+}
