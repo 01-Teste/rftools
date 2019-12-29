@@ -7,7 +7,8 @@
 # Validações
 if [[ $UID != 0 ]]; then echo "O instalador deve ser executado com super-usuário"; exit 1; fi
 if [[ ! -d '/etc/rftools' ]]; then mkdir /etc/rftools; fi
-if [[ ! -f '/usr/local/bin/rftools' ]]; then echo "Configurar o PATH do programa"; fi
+if [[ ! -e /usr/bin/htop ]]; then apt-get -y install htop; fi
+if [[ ! -e /usr/bin/mcedit ]]; then apt-get -y install htop; fi
 
 # Configurando os arquivos para o funcionamento do sistema
 cp -r ./{LIB,VARS,README,install.sh,uninstall.sh} /etc/rftools
