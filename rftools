@@ -7,7 +7,7 @@
 # Versão: 1.0.01 BETA
 
 # --- Variaveis --- #
-source /home/rafael/bin/PROGRAMAS/RFTOOLS/VARS/VARIAVEIS.vars
+source /etc/rftools/VARS/VARIAVEIS.vars
 
 # --- Verificações --- #
 if [[ ! -d $DIR ]]; then ERR0; exit 1; fi
