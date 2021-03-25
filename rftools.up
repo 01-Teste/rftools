@@ -1,0 +1,77 @@
+#!/usr/bin/env bash
+
+# Desenvolvedor: Rafael Silva Santos
+# Contatos: rfaelsst@gmail.com | 75 9 8893-2870
+# Data de criação: 01.09.2019
+# Data de modificação: 13.09.2019
+# Versão: 1.0.01 BETA
+
+# --- Variaveis --- #
+source /etc/rftools/VARS/VARIAVEIS.vars
+
+# --- Verificações --- #
+if [[ ! -d $DIR ]]; then ERR0; exit 1; fi
+if [[ ! -d $DIRLIB ]]; then ERR1; exit 1; fi
+
+# --- Bibliotecas --- #
+source $DIRLIB/MENSAGENS.biblioteca; source $DIRLIB/MENU.biblioteca
+
+# --- Programação --- #
+while true; do clear; MENU
+
+	while true; do if [[ -z "$OP" ]]; then MSG1; sleep 2; clear; MENU; else break ; fi; done
+
+	case $OP in
+		1) clear; MSG2; read DIR; mkdir $DIR
+
+			case $? in 0) MSG3 ;; *) MSG4 ;; esac
+
+			MSG5; read ;;
+
+		2) clear; MSG6; read DEL; rm -r $DEL
+
+			case $? in 0) MSG7 ;; *) MSG8 ;; esac
+
+			MSG5; read ;;
+
+		3) clear; MSG9; read ARQ; rm $ARQ 2> /dev/null
+
+		 	case $? in 0) MSG10 ;; *) MSG11 ;; esac
+
+			MSG5; read ;;
+
+		4) clear; MSG12; read LIS
+
+			if [[ -z "$LIS" ]] || [[ ! -d "$LIS" ]]; then MSG13; else clear; ls -l $LIS | less; fi
+
+			MSG5; read ;;
+
+		5) clear; mcedit; clear; MSG5; read ;;
+
+		6) clear; nano; clear; MSG5; read ;;
+
+		7) clear; MSG14; free -h; MSG5; read ;;
+
+		8) clear; cal; MSG5; read ;;
+
+		9) clear; MSG15; read "ARQDEL"; MSG16; read LOCAL; cd $LOCAL
+
+			if [[ -z "$LOCAL" ]] || [[ -d "$LOCAL" ]]; then MSG17; fi
+
+			cd $LOCAL; rm $ARQDEL
+
+			case $? in 0) MSG18 ;; *) MSG19 ;; esac
+			
+			MSG5; read ;;
+
+		10) clear; MSG21; echo ""; ping -c 8 uol.com.br; MSG22; read ;;
+
+		11) clear; MSG24; read; clear; route | less ;;
+
+		12) htop ;;
+
+		0) clear; MSG23; sleep 2; break ;;
+
+		*) MSG20; sleep 2 ;;
+  esac
+done && clear
